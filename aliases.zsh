@@ -35,7 +35,7 @@ case "$(uname -s)" in
     alias ls="ls -Gp"
     ;;
   *)
-    echo "Unknown system. Please check aliases under"
+    echo "Unknown system. Please check aliases initialization under path:"
     echo "$0"
     ;;
 esac
