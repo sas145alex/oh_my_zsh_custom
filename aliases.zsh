@@ -5,8 +5,6 @@
 # Example:
 # alias vi='vim'
 
-alias ls="ls -Gp --color=auto"
-
 alias zshreload="source ~/.zshrc"
 
 # docker
@@ -26,12 +24,18 @@ alias dcd="docker-compose down"
 alias theme="echo $ZSH_THEME"
 alias zsh_theme="echo $ZSH_THEME"
 
-
 # system dependent aliases
-if [ "$(uname -s)" = "Linux" ]; then
-  # Linux aliases
-  alias here="nautilus . >/dev/null 2>&1 &; disown"
-else
-  # Mac aliases
-  alias here="open ."
-fi
+case "$(uname -s)" in
+  "Linux")
+    alias here="nautilus . >/dev/null 2>&1 &; disown"
+    ls="ls -Gp --color=auto"
+    ;;
+  "Darwin")
+    alias here="open ."
+    alias ls="ls -Gp"
+    ;;
+  *)
+    echo "Unknown system. Please check aliases under"
+    echo "$0"
+    ;;
+esac
