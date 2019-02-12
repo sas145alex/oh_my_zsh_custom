@@ -8,9 +8,16 @@ git clone https://github.com/sas145alex/oh_my_zsh_custom.git custom
 ```
 
 ## Recommended plugins
+```bash
 plugins=(
-  git 
-  colored-man-pages 
-  zsh-syntax-highlighting 
-  zsh-autosuggestions rails
+  # standart plugins
+  git
+  gem
+  docker
+  colored-man-pages
+
+  # custom plugins
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
+```
