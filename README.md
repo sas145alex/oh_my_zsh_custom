@@ -10,7 +10,7 @@ git clone https://github.com/sas145alex/oh_my_zsh_custom.git custom
 rm -rf custom.backup
 ```
 
-## Recommended plugins
+### Recommended plugins
 ```bash
 plugins=(
   # standart plugins
