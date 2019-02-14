@@ -6,6 +6,8 @@
 # alias vi='vim'
 
 alias zshreload="source ~/.zshrc"
+alias zshcustom="cd $ZSH_CUSTOM"
+alias zshaliases="nano $ZSH_CUSTOM/aliases.zsh"
 
 # docker
 alias containerclean="docker ps -a -q | xargs docker rm"
@@ -17,6 +19,7 @@ alias dcew="docker-compose exec web"
 alias dcr="docker-compose run --rm"
 alias dcup="docker-compose up"
 alias dcupq="docker-compose up -d"
+alias dcupd="docker-compose up -d"
 alias dcs="docker-compose stop"
 alias dcd="docker-compose down"
 
