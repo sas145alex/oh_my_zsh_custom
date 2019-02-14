@@ -31,7 +31,7 @@ alias zsh_theme="echo $ZSH_THEME"
 case "$(uname -s)" in
   "Linux")
     alias here="nautilus . >/dev/null 2>&1 &; disown"
-    ls="ls -Gp --color=auto"
+    alias ls="ls -Gp --color=auto"
     ;;
   "Darwin")
     alias here="open ."
