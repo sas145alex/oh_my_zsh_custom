@@ -5,9 +5,15 @@
 # Example:
 # alias vi='vim'
 
+# common
+# alias grepe=" | grep -E "
+
+# zsh
 alias zshreload="source ~/.zshrc"
 alias zshcustom="cd $ZSH_CUSTOM"
 alias zshaliases="nano $ZSH_CUSTOM/aliases.zsh"
+alias theme="echo $ZSH_THEME"
+alias zsh_theme="echo $ZSH_THEME"
 
 # docker
 alias containerclean="docker ps -a -q | xargs docker rm"
@@ -23,15 +29,22 @@ alias dcupd="docker-compose up -d"
 alias dcs="docker-compose stop"
 alias dcd="docker-compose down"
 
-# zsh
-alias theme="echo $ZSH_THEME"
-alias zsh_theme="echo $ZSH_THEME"
+# rails deploy
+# alias cpd="echo -e '\033[0;31m** PRODUCTION DEPLOYMENT **\033[0m';bundle exec cap production deploy"
+alias csd="echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
+
+# rails
+alias r="bin/rails s"
+alias rc="bundle exec bin/rails c"
+alias rk="bundle exec rake"
+alias be="bundle exec"
+alias bi="bundle install"
 
 # system dependent aliases
 case "$(uname -s)" in
   "Linux")
     alias here="nautilus . >/dev/null 2>&1 &; disown"
-    ls="ls -Gp --color=auto"
+    alias ls="ls -Gp --color=auto"
     ;;
   "Darwin")
     alias here="open ."
