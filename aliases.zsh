@@ -8,6 +8,9 @@
 # common
 # alias grepe=" | grep -E "
 
+# git
+alias gcd="git checkout dev"
+
 # zsh
 alias zshreload="source ~/.zshrc"
 alias zshcustom="cd $ZSH_CUSTOM"
