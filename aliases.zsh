@@ -40,6 +40,7 @@ alias rk="bundle exec rake"
 alias be="bundle exec"
 alias bi="bundle install"
 alias rdb="bundle exec bin/rails dbconsole"
+alias sd="bundle exec sidekiq"
 
 # system dependent aliases
 case "$(uname -s)" in
