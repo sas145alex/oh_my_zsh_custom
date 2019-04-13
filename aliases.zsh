@@ -7,6 +7,7 @@
 
 # common
 # alias grepe=" | grep -E "
+alias work="cd ~/work"
 
 # git
 alias gcd="git checkout dev"
