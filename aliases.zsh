@@ -56,6 +56,7 @@ case "$(uname -s)" in
   "Linux")
     alias here="nautilus . >/dev/null 2>&1 &; disown"
     alias ls="ls -Gp --color=auto"
+    alias ppsql="sudo -u postgres psql"
     ;;
   "Darwin")
     alias here="open ."
