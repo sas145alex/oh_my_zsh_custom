@@ -44,10 +44,13 @@ alias rk="bundle exec rake"
 alias be="bundle exec"
 alias bi="bundle install"
 alias rdb="bundle exec bin/rails dbconsole"
-alias sd="bundle exec sidekiq"
 alias swag="bundle exec rake rswag:specs:swaggerize"
 alias ba="bundler-audit update && bundler-audit"
 alias rcreds="EDITOR=nano bin/rails credentials:edit"
+
+# sidekiq
+alias sd="bundle exec sidekiq"
+alias sdc="bundle exec sidekiq -C config/sidekiq.yml"
 
 # minio
 alias minios="MINIO_ACCESS_KEY=access_key MINIO_SECRET_KEY=secret_access_key minio server --address localhost:9000 ~/minio_data "
