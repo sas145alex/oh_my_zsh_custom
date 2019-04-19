@@ -5,9 +5,14 @@
 # Example:
 # alias vi='vim'
 
+# system general
+alias rboot="shutdown -r now"
+
 # common
 # alias grepe=" | grep -E "
 alias work="cd ~/work"
+
+
 
 # git
 alias gcd="git checkout dev"
