@@ -8,6 +8,9 @@ My personal custom settings to oh-my-zsh
 cd $ZSH
 mv custom custom.backup
 git clone https://github.com/sas145alex/oh_my_zsh_custom.git custom
+# OR
+git clone git@github.com:sas145alex/oh_my_zsh_custom.git custom
+
 # Optional
 rm -rf custom.backup
 ```
