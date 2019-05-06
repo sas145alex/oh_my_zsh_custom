@@ -12,7 +12,9 @@ alias rboot="shutdown -r now"
 # alias grepe=" | grep -E "
 alias work="cd ~/work"
 
-
+# taskwarrior
+alias tl="task list"
+alias ta="task add"
 
 # git
 alias gcd="git checkout dev"
