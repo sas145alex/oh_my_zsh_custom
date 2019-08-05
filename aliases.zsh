@@ -55,6 +55,9 @@ alias swag="bundle exec rake rswag:specs:swaggerize"
 alias ba="bundler-audit update && bundler-audit"
 alias rcreds="EDITOR=nano bin/rails credentials:edit"
 
+# openapi builder
+alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
+
 # sidekiq
 alias sd="bundle exec sidekiq"
 alias sdc="bundle exec sidekiq -C config/sidekiq.yml"
