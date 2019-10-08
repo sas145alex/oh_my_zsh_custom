@@ -42,7 +42,7 @@ alias dcd="docker-compose down"
 
 # rails deploy
 # alias cpd="echo -e '\033[0;31m** PRODUCTION DEPLOYMENT **\033[0m';bundle exec cap production deploy"
-alias csd="echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
+alias csd="ssh-add -K; echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
 
 # rails
 alias r="bin/rails s"
@@ -57,6 +57,7 @@ alias rcreds="EDITOR=nano bin/rails credentials:edit"
 
 # openapi builder
 alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
+alias staticapi="npx redoc-cli bundle openapi/openapi.json"
 
 # sidekiq
 alias sd="bundle exec sidekiq"
