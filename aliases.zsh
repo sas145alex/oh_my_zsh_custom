@@ -40,6 +40,10 @@ alias dcupd="docker-compose up -d"
 alias dcs="docker-compose stop"
 alias dcd="docker-compose down"
 
+# docker - work specific
+alias dcupb="docker-compose up -d rails sidekiq"
+alias da="docker attach"
+
 # rails deploy
 # alias cpd="echo -e '\033[0;31m** PRODUCTION DEPLOYMENT **\033[0m';bundle exec cap production deploy"
 alias csd="ssh-add -K; echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
