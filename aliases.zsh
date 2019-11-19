@@ -57,7 +57,7 @@ alias bi="bundle install"
 alias rdb="bundle exec bin/rails dbconsole"
 alias swag="bundle exec rake rswag:specs:swaggerize"
 alias ba="bundler-audit update && bundler-audit"
-alias rcreds="EDITOR=nano bin/rails credentials:edit"
+alias rcreds="EDITOR='atom --wait' bin/rails credentials:edit"
 
 # openapi builder
 alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
