@@ -41,11 +41,13 @@ alias dcs="docker-compose stop"
 alias dcd="docker-compose down"
 
 # docker - work specific
-alias dcupb="docker-compose up -d rails sidekiq; docker-compose up rails"
+alias dcupb="docker-compose up -d rails sidekiq"
+alias da="docker attach"
 
 # rails deploy
 # alias cpd="echo -e '\033[0;31m** PRODUCTION DEPLOYMENT **\033[0m';bundle exec cap production deploy"
 alias csd="ssh-add -K; echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
+alias cod="ssh-add -K; echo -e '\033[0;33m** OFFICE DEPLOYMENT **\033[0m';bundle exec cap office deploy"
 
 # rails
 alias r="bin/rails s"
@@ -56,7 +58,7 @@ alias bi="bundle install"
 alias rdb="bundle exec bin/rails dbconsole"
 alias swag="bundle exec rake rswag:specs:swaggerize"
 alias ba="bundler-audit update && bundler-audit"
-alias rcreds="EDITOR=nano bin/rails credentials:edit"
+alias rcreds="EDITOR='atom --wait' bin/rails credentials:edit"
 
 # openapi builder
 alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
