@@ -7,9 +7,9 @@ My personal custom settings to oh-my-zsh
 ```bash
 cd $ZSH
 mv custom custom.backup
-git clone https://github.com/sas145alex/oh_my_zsh_custom.git custom
-# OR
 git clone git@github.com:sas145alex/oh_my_zsh_custom.git custom
+# OR
+git clone https://github.com/sas145alex/oh_my_zsh_custom.git custom
 
 # Optional
 rm -rf custom.backup
@@ -49,7 +49,7 @@ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.ot
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir ~/.fonts/
 mv PowerlineSymbols.otf ~/.fonts/
-mkdir -p .config/fontconfig/conf.d #if directory doesn't exists
+mkdir -p ~/.config/fontconfig/conf.d #if directory doesn't exists
 fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 ```
