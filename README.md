@@ -35,6 +35,7 @@ plugins=(
   git
   gem
   docker
+  docker-compose
   colored-man-pages
 
   # custom plugins
