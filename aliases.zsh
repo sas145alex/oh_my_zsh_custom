@@ -11,10 +11,7 @@ alias rboot="shutdown -r now"
 # common
 # alias grepe=" | grep -E "
 alias work="cd ~/work"
-
-# taskwarrior
-alias tl="task list"
-alias ta="task add"
+alias stoege="cd ~/work/netologia/stoege"
 
 # git
 alias gcd="git checkout dev"
@@ -88,3 +85,6 @@ case "$(uname -s)" in
     echo "$0"
     ;;
 esac
+
+# foxford project
+alias front_rerun="rm -rf tmp/hard-source; rm -rf client/node_modules/.cache; npm ci; npm run start-react"
