@@ -12,6 +12,7 @@ alias rboot="shutdown -r now"
 # alias grepe=" | grep -E "
 alias work="cd ~/work"
 alias stoege="cd ~/work/netologia/stoege"
+alias invest="cd ~/home_apps/rails/invest_lint"
 
 # git
 alias gcd="git checkout dev"
