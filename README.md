@@ -3,6 +3,7 @@ My personal custom settings to oh-my-zsh
 
 ## Install
 
+
 ### oh-my-zsh
 ```bash
 cd $ZSH
