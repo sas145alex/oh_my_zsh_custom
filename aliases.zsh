@@ -58,6 +58,8 @@ alias swag="bundle exec rake rswag:specs:swaggerize"
 alias ba="bundler-audit update && bundler-audit"
 alias rcreds="EDITOR='atom --wait' bin/rails credentials:edit"
 alias linters="bundle exec standardrb --fix"
+alias berf="bundle exec rspec --tag=focus"
+alias ber="bundle exec rspec"
 
 # openapi builder
 alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
