@@ -1,51 +1,11 @@
-# This file contain my custom aliases
-#
-# If you use oh-my-zsh i recommend put this file into $ZSH_CUSTOM directory
-#
-# Example:
-# alias vi='vim'
-
 # system general
 alias rboot="shutdown -r now"
-
-# common
-# alias grepe=" | grep -E "
-alias work="cd ~/work"
-alias stoege="cd ~/work/netologia/stoege"
-alias invest="cd ~/home_apps/rails/invest_lint"
-
-# git
-alias gcd="git checkout dev"
 
 # zsh
 alias zshreload="source ~/.zshrc"
 alias zshcustom="cd $ZSH_CUSTOM"
 alias zshaliases="nano $ZSH_CUSTOM/aliases.zsh"
-alias theme="echo $ZSH_THEME"
-alias zsh_theme="echo $ZSH_THEME"
-
-# docker
-alias containerclean="docker ps -a -q | xargs docker rm"
-alias imageclean="docker images --filter dangling=true -q | xargs docker rmi"
-alias dc="docker-compose"
-alias dcps="docker-compose ps"
-alias dce="docker-compose exec"
-alias dcew="docker-compose exec web"
-alias dcr="docker-compose run --rm"
-alias dcup="docker-compose up"
-alias dcupq="docker-compose up -d"
-alias dcupd="docker-compose up -d"
-alias dcs="docker-compose stop"
-alias dcd="docker-compose down"
-
-# docker - work specific
-alias dcupb="docker-compose up -d rails sidekiq"
-alias da="docker attach"
-
-# rails deploy
-# alias cpd="echo -e '\033[0;31m** PRODUCTION DEPLOYMENT **\033[0m';bundle exec cap production deploy"
-alias csd="ssh-add -K; echo -e '\033[0;33m** STAGING DEPLOYMENT **\033[0m';bundle exec cap staging deploy"
-alias cod="ssh-add -K; echo -e '\033[0;33m** OFFICE DEPLOYMENT **\033[0m';bundle exec cap office deploy"
+alias zshtheme="echo $ZSH_THEME"
 
 # rails
 alias r="bin/rails s"
@@ -54,23 +14,12 @@ alias rk="bundle exec rake"
 alias be="bundle exec"
 alias bi="bundle install"
 alias rdb="bundle exec bin/rails dbconsole"
-alias swag="bundle exec rake rswag:specs:swaggerize"
-alias ba="bundler-audit update && bundler-audit"
-alias rcreds="EDITOR='atom --wait' bin/rails credentials:edit"
-alias linters="bundle exec standardrb --fix"
 alias berf="bundle exec rspec --tag=focus"
 alias ber="bundle exec rspec"
-
-# openapi builder
-alias apibuild="openapi_builder build openapi/openapi.yml openapi/openapi.json"
-alias staticapi="npx redoc-cli bundle openapi/openapi.json"
 
 # sidekiq
 alias sd="bundle exec sidekiq"
 alias sdc="bundle exec sidekiq -C config/sidekiq.yml"
-
-# minio
-alias minios="MINIO_ACCESS_KEY=access_key MINIO_SECRET_KEY=secret_access_key minio server --address localhost:9000 ~/minio_data "
 
 # system dependent aliases
 case "$(uname -s)" in
@@ -89,5 +38,3 @@ case "$(uname -s)" in
     ;;
 esac
 
-# foxford project
-alias front_rerun="rm -rf tmp/hard-source; rm -rf client/node_modules/.cache; npm ci; npm run start-react"
