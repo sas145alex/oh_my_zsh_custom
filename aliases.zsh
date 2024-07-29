@@ -10,6 +10,7 @@ alias zshtheme="echo $ZSH_THEME"
 # rails
 alias r="bin/rails s"
 alias rc="bundle exec bin/rails c"
+alias rct="RAILS_ENV=test bundle exec bin/rails c"
 alias rk="bundle exec rake"
 alias be="bundle exec"
 alias bi="bundle install"
